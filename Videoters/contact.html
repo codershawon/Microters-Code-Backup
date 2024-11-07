@@ -1,0 +1,132 @@
+<style>
+    /* Contact Us */
+    .contact-us-form .wpforms-field-name-first,
+    .contact-us-form .wpforms-field-name-last,
+    .contact-us-form #wpforms-1832-field_2,
+    .contact-us-form #wpforms-1832-field_4,
+    .contact-us-form #wpforms-1832-field_5,
+    .contact-us-form .wpforms-submit-1832{
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05)!important;
+    }
+    .contact-us-form .wpforms-submit-container .wpforms-submit{
+      width: 100%;
+    }
+    .contact-us-info .wp-block-column .wp-block-image{
+      background-color: #ff1f56;
+      display: inline-flex;
+      padding: 14px;
+      border-radius: 10px;
+    }
+    .contact-us-info .wp-block-column{
+      transition: all 0.6s cubic-bezier(0.1,0.84,0.44,1);
+    }
+    .contact-us-info .wp-block-column:hover{
+      transform: scale(1.05,1.05);
+    }
+           /* FAQ */
+    .faq .wp-block-uagb-faq{
+      max-width: 900px;
+      margin: auto;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child{
+      transition: transform 300ms ease 0ms;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child:hover{
+      transform: scaleX(1.03) scaleY(1.03);
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child.uagb-faq-item-active{
+      background-color: #ff1f56;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child.uagb-faq-item-active .uagb-question,
+    .faq .faq-inner .wp-block-uagb-faq-child.uagb-faq-item-active .uagb-faq-content{
+      color: #fff;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-questions {
+      display: flex;
+      gap: 80px;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-content p{
+      padding-right: 150px;
+      margin-bottom: 15px!important;
+    }
+    .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap,
+    .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap 
+    {
+      position: relative;
+    }
+    .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap::before,
+    .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap::before{
+      position: absolute;
+      content: "";
+      top: 16px;
+      right: -16px;
+      height: 100%;
+      width: 100%;
+  }
+    .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap::before{
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M15.9952 13.5023L16 0.707031L3.19999 0.708611L3.19841 2.30705H13.2688L0 15.5758L1.1312 16.707L14.4 3.43825V13.507L15.9952 13.5023Z' fill='black'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+  }
+    .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap::before{
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath xmlns='http://www.w3.org/2000/svg' id='Vector' d='M3.20477 16.7022L16 16.707L15.9984 3.90702L14.4 3.90544V13.9759L1.1312 0.707031L0 1.83823L13.2688 15.1071H3.19999L3.20477 16.7022Z' fill='%23ff1f56'/%3E%3C/svg%3E");
+     background-repeat: no-repeat;
+  }
+    .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap,
+    .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap{
+      padding: 25px;
+      background-color: #fff;
+      border-radius: 50px;
+    }
+  
+    /* Responsive */
+  @media (max-width: 1024px){
+    .contact-us-info h4,
+    .contact-us-info p{
+      text-align: center;
+    }
+    .contact-us-info .wp-block-columns{
+      flex-wrap: wrap!important;
+      justify-content: center;
+    }
+    .contact-us-info .wp-block-columns .wp-block-column{
+      flex-basis: calc(50% - 60px) !important;
+      flex-grow: 0;
+      text-align: center;
+    }
+     /* FAQ */
+     .faq{
+      padding-left: 20px;
+      padding-right: 20px;
+     }
+     .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-questions,
+     .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-content{
+      padding-left: 30px;
+      padding-right: 30px;
+     }
+    }
+  @media (max-width: 599px){
+    h1,h2{font-size: 32px!important;}
+    .common{
+      padding-top: 50px!important;
+      padding-bottom: 50px!important;
+    }
+    .contact-us-banner h2,
+    .contact-us-banner p{
+      text-align: center;
+    }
+    .contact-us-info .wp-block-columns .wp-block-column{
+      flex-basis: 100% !important;
+    }
+         /* FAQ */
+    .faq{
+        padding-top: 40px!important;
+        padding-bottom: 40px!important;
+     }
+     .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-questions{
+        gap: 0px!important;
+     }
+     .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-content p{
+        padding-right: 40px!important;
+     }
+    }
+  </style>

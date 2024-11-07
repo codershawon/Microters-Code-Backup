@@ -1,0 +1,301 @@
+<style>
+    /* Common Button */
+   .common-btn .wp-block-button{
+     position: relative;
+   }
+   .common-btn .wp-block-button::before,
+   .common-btn .wp-block-button a:hover::after {
+     position: absolute;
+     right: 10px;
+     background-repeat: no-repeat;
+     height: 25px;
+     width: 24px;
+     content: "";
+  }
+   .common-btn .wp-block-button::before {
+     top: 9px;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cg id='arrow-narrow-right'%3E%3Cpath id='Icon' d='M4 12.5H20M20 12.5L14 6.5M20 12.5L14 18.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+  }
+   .common-btn .wp-block-button a:hover::after {
+     top: 10px;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 25 24' fill='none'%3E%3Cg id='arrow-narrow-right'%3E%3Cpath id='Icon' d='M4.5 12H20.5M20.5 12L14.5 6M20.5 12L14.5 18' stroke='%23FF1F56' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+  }
+   .common-btn .wp-block-button a{
+     padding-left: 15px!important;
+     padding-bottom: 12px!important;
+     transition: .4s;
+     border: 1px solid transparent;
+     white-space: nowrap;
+   }
+   .common-btn .wp-block-button a:hover{
+     background-color: #fff!important;
+     color: #ff1f56;
+     border-color: #ff1f56;
+   }
+   /* About Banner */
+   .about-banner .common-align{
+     display: flex;
+     align-items: center;
+     gap: 280px;
+   }
+   .about-banner .common-align h2,
+   .about-banner .common-align .about-banner-btn{
+      margin: 0px!important;
+   }
+   .about-banner .about-banner-btn .wp-block-button{
+     position: relative;
+   }
+   .about-banner .about-banner-btn .wp-block-button::before{
+     position: absolute;
+     top: 9px;
+     right: 10px;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 11.9998H20M20 11.9998L14 5.99976M20 11.9998L14 17.9998' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+     background-repeat: no-repeat;
+     height: 25px;
+     width: 24px;
+     content: "";
+  }
+   .about-banner .about-banner-btn .wp-block-button a{
+     padding-left: 15px!important;
+     padding-bottom: 12px!important;
+     white-space: nowrap;
+     transition: 0.4s;
+   }
+   .about-banner .about-banner-btn .wp-block-button a:hover{
+     background-color: #000!important;
+   }
+   .about-banner .about-banner-btn .wp-block-button a:hover strong{
+     color: #fff;
+   }
+   .about-banner .about-banner-btn .wp-block-button a:hover::before{
+     position: absolute;
+     top: 9px;
+     right: 10px;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 11.9998H20M20 11.9998L14 5.99976M20 11.9998L14 17.9998' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+     background-repeat: no-repeat;
+     height: 25px;
+     width: 24px;
+     content: "";
+   }
+   /* Who We Are */
+   .who-we-are p{
+     max-width: 768px;
+   }
+   /* Our Service */
+   .our-service .wp-block-uagb-counter__title{
+     display: none;
+   }
+   .our-service .wp-block-columns .wp-block-column{
+     backdrop-filter: blur(12px);
+   }
+   /* Our Passion */
+   .our-passion .wp-block-column{
+     border-radius: 16px;
+     transition: all 0.6s cubic-bezier(0.1,0.84,0.44,1);
+   }
+   .our-passion .wp-block-column:hover{
+     transform: scale(1.05,1.05);
+   }
+   .our-passion .wp-block-uagb-info-box .uagb-ifb-image-content img{
+     height: 85px!important;
+   }
+   .our-passion .wp-block-uagb-info-box h3,
+   .our-passion .wp-block-uagb-info-box p{
+     text-align: left;
+   }
+    /* Our team */
+   .our-team .wp-block-columns .wp-block-column{
+     position: relative;
+   } 
+   .our-team .flip-card{
+     background-color: transparent;
+     perspective: 1000px;
+   } 
+   .our-team .flip-card .wp-block-image {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     transform-style: preserve-3d;
+     transition: transform 1s;
+   } 
+   .our-team .wp-block-columns .wp-block-column:hover .flip-card .wp-block-image {
+     transform: rotateY(360deg);
+   }
+          /* FAQ */
+   .faq .wp-block-uagb-faq{
+     max-width: 900px;
+     margin: auto;
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child{
+     transition: transform 300ms ease 0ms;
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child:hover{
+     transform: scaleX(1.03) scaleY(1.03);
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child.uagb-faq-item-active{
+     background-color: #ff1f56;
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child.uagb-faq-item-active .uagb-question,
+   .faq .faq-inner .wp-block-uagb-faq-child.uagb-faq-item-active .uagb-faq-content{
+     color: #fff;
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-questions {
+     display: flex;
+     gap: 80px;
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-content p{
+     padding-right: 150px;
+     margin-bottom: 15px!important;
+   }
+   .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap,
+   .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap 
+   {
+     position: relative;
+   }
+   .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap::before,
+   .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap::before{
+     position: absolute;
+     content: "";
+     top: 16px;
+     right: -16px;
+     height: 100%;
+     width: 100%;
+ }
+   .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap::before{
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M15.9952 13.5023L16 0.707031L3.19999 0.708611L3.19841 2.30705H13.2688L0 15.5758L1.1312 16.707L14.4 3.43825V13.507L15.9952 13.5023Z' fill='black'/%3E%3C/svg%3E");
+     background-repeat: no-repeat;
+ }
+   .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap::before{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath xmlns='http://www.w3.org/2000/svg' id='Vector' d='M3.20477 16.7022L16 16.707L15.9984 3.90702L14.4 3.90544V13.9759L1.1312 0.707031L0 1.83823L13.2688 15.1071H3.19999L3.20477 16.7022Z' fill='%23ff1f56'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+ }
+   .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap,
+   .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap{
+     padding: 25px;
+     background-color: #fff;
+     border-radius: 50px;
+   }
+ 
+ /* Responsive */
+ @media (max-width: 1200px){
+  /* About Banner */
+   .about-banner .common-align{
+     gap: 100px;
+   }
+ }
+ @media(max-width: 1024px){
+     /* Reset */
+   h1,h2,.wp-block-uagb-counter__number{
+     font-size: 40px!important;
+   }
+    /* Our Team */
+   .our-team .wp-block-columns .wp-block-column .wp-block-image{
+     max-width: 300px;
+     margin: auto;
+   }
+    /* Common */
+   .our-passion .wp-block-columns,
+   .our-team .wp-block-columns,
+   .our-service .wp-block-columns,
+   .vt-info-counter .wp-block-columns{
+     flex-wrap: wrap!important;
+     justify-content: center!important;
+   }
+   .our-service .wp-block-columns .wp-block-column,
+   .our-passion .wp-block-columns .wp-block-column,
+   .our-team .wp-block-columns .wp-block-column,
+   .vt-info-counter .wp-block-columns .wp-block-column{
+     flex-basis: calc(50% - 62px) !important;
+     flex-grow: 0;
+   }
+   .vt-info-counter .wp-block-columns{
+     padding-right: 0px!important;
+     padding-left: 0px!important;
+   }
+   .our-passion .wp-block-columns .uagb-ifb-content h3,
+   .our-passion .wp-block-columns .uagb-ifb-content p{
+     text-align: center;
+   }
+      /* FAQ */
+    .faq{
+     padding-left: 20px;
+     padding-right: 20px;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-questions,
+    .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-content{
+     padding-left: 30px;
+     padding-right: 30px;
+    }
+   }
+   @media (max-width: 599px){
+      /* Reset */
+     h1{
+       text-align: center;
+     }
+     h1,h2{
+       font-size: 32px !important;
+       margin-top: 0!important;
+       letter-spacing: 0px!important;
+     }
+     p {
+       font-size: 18px!important;
+       line-height: 25px!important;
+     }
+     /* Common */
+     .common{
+       padding-top: 50px!important;
+       padding-bottom: 50px!important;
+     }
+     .common-align{
+       flex-direction: column;
+       gap: 20px!important;
+     }
+    .our-team .wp-block-columns{
+       flex-wrap: wrap!important;
+    }
+    .our-team .wp-block-columns .wp-block-column{
+       flex-basis: 100% !important;
+       max-width: 400px!important;
+       margin: auto;
+    }
+     /* Common Align */
+    .common-align h2,
+    .common-align p{
+       text-align: center;
+     }
+    .common-align .common-btn{
+       margin: auto!important;
+     }
+   .our-service .wp-block-columns .wp-block-column,
+   .our-passion .wp-block-columns .wp-block-column,
+   .our-team .wp-block-columns .wp-block-column,
+   .vt-info-counter .wp-block-columns .wp-block-column{
+     flex-basis: 100%!important;
+   }
+     /* Our Team */
+    .our-team{
+       padding-top: 40px!important;
+       padding-bottom: 40px!important;
+    }
+    /* Our Service */
+    .our-service .wp-block-cover .wp-block-columns{
+       padding: 20px!important;
+    }
+         /* FAQ */
+   .faq{
+       padding-top: 40px!important;
+       padding-bottom: 40px!important;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-questions{
+       gap: 0px!important;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-content p{
+       padding-right: 40px!important;
+    }
+   }
+ 
+   /* Others */
+   .vt-info-counter .wp-block-column {
+       background-color: rgb(0 0 0 / 50%) !important;
+   }
+ </style>

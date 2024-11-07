@@ -1,0 +1,259 @@
+<style>
+    /* Common Button */
+     .common-btn .wp-block-button{
+       position: relative;
+      }
+     .common-btn .wp-block-button::before,
+     .common-btn .wp-block-button a:hover::after {
+       position: absolute;
+       right: 10px;
+       background-repeat: no-repeat;
+       height: 25px;
+       width: 24px;
+       content: "";
+     }
+     .common-btn .wp-block-button::before {
+       top: 9px;
+       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cg id='arrow-narrow-right'%3E%3Cpath id='Icon' d='M4 12.5H20M20 12.5L14 6.5M20 12.5L14 18.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+     }
+     .common-btn .wp-block-button a:hover::after {
+       top: 10px;
+       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 25 24' fill='none'%3E%3Cg id='arrow-narrow-right'%3E%3Cpath id='Icon' d='M4.5 12H20.5M20.5 12L14.5 6M20.5 12L14.5 18' stroke='%23FF1F56' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+     }
+     .common-btn .wp-block-button a{
+       padding-left: 15px!important;
+       padding-bottom: 12px!important;
+       transition: .4s;
+       border: 1px solid transparent;
+       white-space: nowrap;
+     }
+     .common-btn .wp-block-button a:hover{
+       background-color: #fff!important;
+       color: #ff1f56;
+       border-color: #ff1f56;
+     } 
+      /* Common align */
+     .common-align{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: 20px;
+     }
+     .common-align h2,
+     .common-align .common-btn{
+        margin: 0px!important;
+     }
+     .common-align h2{
+       max-width: 1000px;
+     }
+   /* About Services */
+    .about-services .wp-block-columns .wp-block-column .wp-block-cover{
+       height: 580px;
+       border-radius: 13px;
+       max-height: 100%!important;
+       max-width: 575px;
+     }
+    /* Why Choose Us & Video Production */
+     .why-choose-us .wp-block-column{
+       border-radius: 16px;
+       transition: all 0.6s cubic-bezier(0.1,0.84,0.44,1);
+     }
+     .why-choose-us .wp-block-column:hover{
+       transform: scale(1.05,1.05);
+     }
+     .why-choose-us .wp-block-uagb-info-box .uagb-ifb-image-content{
+       max-width: 95px;
+       max-height: 70px;
+     }
+     .why-choose-us .wp-block-uagb-info-box .uagb-ifb-image-content img{
+       max-width: 85px;
+       max-height: 70px;
+     }
+     .why-choose-us .wp-block-uagb-info-box h3,
+     .why-choose-us .wp-block-uagb-info-box p{
+       text-align: left;
+     }
+     /* Explainer Video */
+     .explainer-video .wp-block-columns .wp-block-column{
+       border-radius: 10px;
+     }
+     .explainer-video  .wp-block-columns .wp-block-column .wp-block-image img{
+       max-height: 100%;
+       border-radius: 10px 10px 0px 0px;
+     } 
+     /* About */
+     .about .about-video-list .wp-block-columns .wp-block-column{
+       border-radius: 10px;
+     }
+     /* Explainer Video Examples*/
+     .explainer-video-examples .video-examples-list .wp-block-columns .wp-block-column{
+       border-radius: 10px;
+     }
+     .explainer-video-examples .video-examples-list .wp-block-columns .wp-block-column img{
+       width: 100%;
+     }  
+     /* Video Production & Why Explainer Video */
+     .video-production .wp-block-column,
+     .why-explainer-video .wp-block-column{
+       border-radius: 12px;
+       transition: all 0.6s cubic-bezier(0.1,0.84,0.44,1);
+     }
+     .video-production .wp-block-column:hover{
+       transform: scale(1.05,1.05);
+     }
+     .video-production .wp-block-uagb-info-box .uagb-ifb-image-content,
+     .why-explainer-video .wp-block-uagb-info-box .uagb-ifb-image-content{
+       max-width: 45px;
+       max-height: 64px;
+     }
+     .video-production .wp-block-uagb-info-box .uagb-ifb-image-content img,
+     .why-explainer-video .wp-block-uagb-info-box .uagb-ifb-image-content img{
+       max-width: 64px;
+       max-height: 64px;
+     }
+     .video-production .wp-block-uagb-info-box h3,
+     .video-production .wp-block-uagb-info-box p,
+     .why-explainer-video .wp-block-uagb-info-box h3,
+     .why-explainer-video .wp-block-uagb-info-box p{
+       text-align: left;
+     } 
+     /* Why Explainer Video */
+     .why-explainer-video .wp-block-column:hover{
+       transform: scale(1.05, 1.05);
+     }
+    /* Review */
+      .review .frhd-gstc-main .splide__slide{
+       width: calc(25% - 12px)!important;
+       box-shadow: rgb(13 89 239 / 10%) 0px 2px 8px 0px;
+     }
+     .review .frhd-gstc-main .splide__slide .frhd-gstc-name{
+       margin: 0px!important;
+     }
+     .review .frhd-gstc-main ul.splide__list{
+       gap: 20px;
+     }
+     .review .frhd-gstc-main .frhd-gstc-says{
+       font-size: 16px;
+       text-align: left;
+     }
+      .review .frhd-gstc-main .frhd-gstc-role,
+      .review .frhd-gstc-main .frhd-gstc-name{
+       text-align: left;
+       line-height: 1.3;
+      }
+     .review .frhd-gstc-main .frhd-gstc-client{
+       display: flex;
+       flex-direction: column;
+     }
+     .review .slider-one .frhd-gstc-client-info{
+       flex-direction: row-reverse;
+     }                                                     
+            
+   /* Responsive */
+   @media(max-width: 1024px){
+     /* Why choose us */
+     .why-choose-us .wp-block-columns,
+     .explainer-video .wp-block-columns,
+     .about .wp-block-columns,
+     .video-production .wp-block-columns,
+     .why-explainer-video .wp-block-columns,
+     .review .wp-block-columns{
+       flex-wrap: wrap!important;
+       justify-content: center;
+     }
+     .why-choose-us .wp-block-columns .wp-block-column{
+       flex-basis: calc(50% - 62px) !important;
+       flex-grow: 0;
+     }
+     .why-choose-us .wp-block-uagb-info-box .uagb-ifb-image-content{
+       margin: auto;
+     }
+     .why-choose-us .wp-block-uagb-info-box h3, .why-choose-us .wp-block-uagb-info-box p {
+       text-align: center;
+     }
+     /* About */
+     .about .about-video-list .wp-block-columns .wp-block-column,
+     .video-production .wp-block-columns .wp-block-column,
+     .why-explainer-video .wp-block-columns .wp-block-column,
+     .explainer-video .wp-block-columns .wp-block-column{
+       flex-basis: calc(50% - 12px)!important;
+       flex-grow: 0!important;
+   }
+   /* Review */
+   .review .frhd-gstc-main .splide__slide{
+       width: calc(33% - 12px)!important;
+     }
+   /* Blog */
+   .frhd__post-grid-8.frhd__post-block-container{
+     grid-template-columns: repeat(2, 1fr)!important;
+   }
+   }
+   @media (max-width: 781px){   
+       /* Review */
+     .review .frhd-gstc-main .splide__slide{
+       width: 100%!important;
+     }
+     .review .frhd-gstc-main .splide__pagination{
+       display: none;
+     }                
+     /* About Services */
+     .about-services .wp-block-columns .wp-block-column .wp-block-cover{
+       max-width: 100%;
+   }
+   }
+   @media (max-width: 599px){
+     /* Common */
+     h1,h2{
+       font-size: 32px!important;
+       line-height: 1.2!important;
+     }
+     .why-explainer-video h2,
+     .video-production h2{
+       text-align: center;
+     }
+     .common{
+       padding-top: 50px!important;
+       padding-bottom: 50px!important;
+     }
+     /* Common Align */
+     .common-align{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+     }
+     .common-align h2{
+       text-align: center;
+     }
+     .common-align .common-btn{
+         margin: auto!important;
+     }
+     .why-choose-us .wp-block-columns .wp-block-column,
+     .explainer-video .wp-block-columns .wp-block-column,
+     .about .about-video-list .wp-block-columns .wp-block-column,
+     .why-explainer-video .wp-block-columns .wp-block-column,
+     .review .wp-block-columns .wp-block-column,
+     .video-production .wp-block-columns .wp-block-column{
+       flex-basis: 100%!important;
+     }
+     .video-production .wp-block-columns .wp-block-uagb-info-box,
+     .why-explainer-video .wp-block-columns .wp-block-uagb-info-box{
+       padding-right: 30px!important;
+       padding-left: 30px!important;
+     }
+     .about-services{
+       padding-top: 40px!important;
+       padding-bottom: 40px!important;
+     }
+     .explainer-video-examples .video-examples-list .wp-block-columns{
+       flex-wrap: wrap!important;
+     }
+     .explainer-video-examples .video-examples-list .wp-block-columns .wp-block-column{
+       flex-basis: 100% !important;
+       max-width: 400px;
+       margin: auto;
+     }
+     .frhd__post-grid-8.frhd__post-block-container{
+       grid-template-columns: repeat(1, 1fr) !important;
+     }
+   }
+    </style>

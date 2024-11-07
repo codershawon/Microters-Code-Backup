@@ -1,0 +1,176 @@
+<style>
+    /* Work Process Banner */
+   .work-process-banner .common-align{
+     display: flex;
+     align-items: center;
+     gap: 280px;
+   }
+   .work-process-banner .common-align h2,
+   .work-process-banner .common-align .work-process-banner-btn{
+     margin: 0px!important;
+   }
+   .work-process-banner .work-process-banner-btn .wp-block-button{
+     position: relative;
+   }
+   .work-process-banner .work-process-banner-btn .wp-block-button::before{
+     position: absolute;
+     top: 9px;
+     right: 10px;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 11.9998H20M20 11.9998L14 5.99976M20 11.9998L14 17.9998' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+     background-repeat: no-repeat;
+     height: 25px;
+     width: 24px;
+     content: "";
+  }
+   .work-process-banner .work-process-banner-btn .wp-block-button a{
+     padding-left: 15px!important;
+     padding-bottom: 12px!important;
+     white-space: nowrap;
+     transition: 0.4s;
+   }
+   .work-process-banner .work-process-banner-btn .wp-block-button a:hover{
+     background-color: #000!important;
+   }
+   .work-process-banner .work-process-banner-btn .wp-block-button a:hover strong{
+     color: #fff;
+   }
+   .work-process-banner .work-process-banner-btn .wp-block-button a:hover::before{
+     position: absolute;
+     top: 9px;
+     right: 10px;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M4 11.9998H20M20 11.9998L14 5.99976M20 11.9998L14 17.9998' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+     background-repeat: no-repeat;
+     height: 25px;
+     width: 24px;
+     content: "";
+   }
+   /* Work Process List */
+   .work-process-list .wp-block-columns .wp-block-column img{
+     border-radius: 13px;
+   }
+        /* FAQ */
+   .faq .wp-block-uagb-faq{
+     max-width: 900px;
+     margin: auto;
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child{
+     transition: transform 300ms ease 0ms;
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child:hover{
+     transform: scaleX(1.03) scaleY(1.03);
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child.uagb-faq-item-active{
+     background-color: #ff1f56;
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child.uagb-faq-item-active .uagb-question,
+   .faq .faq-inner .wp-block-uagb-faq-child.uagb-faq-item-active .uagb-faq-content{
+     color: #fff;
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-questions {
+     display: flex;
+     gap: 80px;
+   }
+   .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-content p{
+     padding-right: 150px;
+     margin-bottom: 15px!important;
+   }
+   .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap,
+   .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap 
+   {
+     position: relative;
+   }
+   .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap::before,
+   .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap::before{
+     position: absolute;
+     content: "";
+     top: 16px;
+     right: -16px;
+     height: 100%;
+     width: 100%;
+ }
+   .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap::before{
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M15.9952 13.5023L16 0.707031L3.19999 0.708611L3.19841 2.30705H13.2688L0 15.5758L1.1312 16.707L14.4 3.43825V13.507L15.9952 13.5023Z' fill='black'/%3E%3C/svg%3E");
+     background-repeat: no-repeat;
+ }
+   .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap::before{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath xmlns='http://www.w3.org/2000/svg' id='Vector' d='M3.20477 16.7022L16 16.707L15.9984 3.90702L14.4 3.90544V13.9759L1.1312 0.707031L0 1.83823L13.2688 15.1071H3.19999L3.20477 16.7022Z' fill='%23ff1f56'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+ }
+   .faq .faq-inner .uagb-icon.uagb-faq-icon-wrap,
+   .faq .faq-inner .uagb-icon-active.uagb-faq-icon-wrap{
+     padding: 25px;
+     background-color: #fff;
+     border-radius: 50px;
+   }
+ 
+   /* Responsive */
+ @media (max-width: 1200px){
+  /* Work Process Banner */
+   .work-process-banner .common-align{
+     gap: 100px;
+   }
+ }
+ @media (max-width: 1024px){
+   /* Reset */
+   h1,h2{font-size: 40px!important;}
+    /* FAQ */
+    .faq{
+     padding-left: 20px;
+     padding-right: 20px;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-questions,
+    .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-content{
+     padding-left: 30px;
+     padding-right: 30px;
+    }
+ }
+ @media (max-width: 781px){
+   .work-process-list .wp-block-columns .wp-block-column img{
+     width: 100%;
+   }
+ }
+  @media (max-width: 599px){
+      /* Reset */
+   h1,h2,h3,.wp-block-uagb-counter__number{
+     font-size: 32px !important;
+     letter-spacing: 0px!important;
+   }
+   p{
+     font-size: 18px!important;
+     line-height: 25px!important;
+   }
+      /* Common Align */
+    .common{
+       padding-top: 50px!important;
+       padding-bottom: 50px!important;
+     }
+     .common-align{
+       flex-direction: column;
+       gap: 20px!important;
+     }
+    .common-align h1,
+    .common-align h2,
+    .common-align p{
+       text-align: center;
+     }
+    .common-align .common-btn{
+       margin: auto!important;
+     }
+     /* Work Process */
+     .work-process-list{
+       padding-top: 50px!important;
+       padding-bottom: 50px!important;
+     }
+       /* FAQ */
+   .faq{
+       padding-top: 40px!important;
+       padding-bottom: 40px!important;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-questions{
+       gap: 0px!important;
+    }
+    .faq .faq-inner .wp-block-uagb-faq-child .uagb-faq-content p{
+       padding-right: 40px!important;
+    }
+  }
+ </style>
